@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title">
+  <title id="title">Poodle illustration</title>
+  <ellipse cx="160" cy="235" rx="91" ry="13" fill="#aea0be" opacity=".36"/>
+  <path d="M111 133c-10 20-16 47-14 79 1 16 12 24 28 24h71c16 0 27-8 28-24 2-32-4-59-14-79z" fill="#f2eaf8" stroke="#45374f" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M124 151c-6 24-7 53-2 85h20c-3-31-2-59 5-85zM196 151c6 24 7 53 2 85h-20c3-31 2-59-5-85z" fill="#d9c9e9"/>
+  <path d="M112 102c-4-37 17-65 51-66 35-1 58 27 54 66-4 43-25 67-55 67s-46-25-50-67z" fill="#eee3f7" stroke="#45374f" stroke-width="6"/>
+  <circle cx="116" cy="66" r="23" fill="#eee3f7" stroke="#45374f" stroke-width="5"/>
+  <circle cx="140" cy="45" r="19" fill="#eee3f7" stroke="#45374f" stroke-width="5"/>
+  <circle cx="166" cy="39" r="20" fill="#eee3f7" stroke="#45374f" stroke-width="5"/>
+  <circle cx="191" cy="49" r="21" fill="#eee3f7" stroke="#45374f" stroke-width="5"/>
+  <circle cx="208" cy="72" r="21" fill="#eee3f7" stroke="#45374f" stroke-width="5"/>
+  <path d="M115 83c-19-1-30-15-32-31-18 21-17 54-2 72 11 13 27 9 39-10-5-11-6-20-5-31z" fill="#d9c9e9" stroke="#45374f" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M208 83c19-1 30-15 32-31 18 21 17 54 2 72-11 13-27 9-39-10 5-11 6-20 5-31z" fill="#d9c9e9" stroke="#45374f" stroke-width="5" stroke-linejoin="round"/>
+  <ellipse cx="141" cy="104" rx="5" ry="7" fill="#45374f"/>
+  <ellipse cx="188" cy="104" rx="5" ry="7" fill="#45374f"/>
+  <path d="M152 122c4-8 22-8 26 0 0 9-6 14-13 14s-13-5-13-14z" fill="#45374f"/>
+  <path d="M165 135c0 8-8 13-17 11m17-11c0 8 8 13 17 11" fill="none" stroke="#45374f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M159 166v14m-10-7h20" stroke="#be95cd" stroke-width="5" stroke-linecap="round"/>
+  <path d="M112 192c-17 2-26 13-24 26 2 12 13 17 28 11m92-37c17 2 26 13 24 26-2 12-13 17-28 11" fill="#eee3f7" stroke="#45374f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M259 54l2-8m8 13 8-3m-7 14 7 5" stroke="#a987bd" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="53" cy="162" r="5" fill="#a987bd"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title">
+  <title id="title">Beagle illustration</title>
+  <ellipse cx="160" cy="235" rx="91" ry="13" fill="#c8aa9a" opacity=".38"/>
+  <path d="M103 132c-11 21-17 48-14 80 2 16 13 24 29 24h82c16 0 27-8 29-24 3-32-3-59-14-80z" fill="#f8f1e6" stroke="#352d2a" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M117 135c-5 23-4 57 5 101h21c-5-42-3-75 5-102zM202 135c5 23 4 57-5 101h-21c5-42 3-75-5-102z" fill="#9b583c"/>
+  <path d="M112 105c-5-31 9-59 48-66 40-7 72 16 69 54-3 44-30 71-66 71-31 0-46-23-51-59z" fill="#f6f0e4" stroke="#352d2a" stroke-width="6"/>
+  <path d="M120 86c2-30 19-46 46-49 18-2 31 4 39 14-13 19-31 28-58 31-8 1-17 2-27 4z" fill="#9b583c"/>
+  <path d="M207 60c20 7 36 2 44-8 17 31 17 66 0 81-13 12-32 2-42-21 8-18 7-35-2-52z" fill="#ad684d" stroke="#352d2a" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M116 62c-20 2-35-7-41-20-21 27-25 61-10 80 11 15 32 10 45-10-5-19-3-36 6-50z" fill="#ad684d" stroke="#352d2a" stroke-width="6" stroke-linejoin="round"/>
+  <ellipse cx="142" cy="101" rx="5" ry="7" fill="#352d2a"/>
+  <ellipse cx="190" cy="101" rx="5" ry="7" fill="#352d2a"/>
+  <path d="M153 120c4-8 18-8 22 0 0 8-5 13-11 13s-11-5-11-13z" fill="#352d2a"/>
+  <path d="M164 132c0 9-8 13-16 10M164 132c0 9 8 13 16 10" fill="none" stroke="#352d2a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M113 191c-19 1-30 12-29 28 1 13 13 19 27 13M207 191c19 1 30 12 29 28-1 13-13 19-27 13" fill="#f8f1e6" stroke="#352d2a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M156 160h17" stroke="#d8a067" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="265" cy="55" r="5" fill="#d9916c"/>
+  <path d="M271 43l2-8m8 13 8-4m-8 15 8 4" stroke="#d9916c" stroke-width="3" stroke-linecap="round"/>
+</svg>

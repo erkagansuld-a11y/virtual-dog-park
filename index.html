@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet three friendly dog breeds and learn the basics of their size, personality, and everyday care."
+    />
+    <title>Virtual Dog Park | Meet the Breeds</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Virtual Dog Park home">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span>virtual<span class="brand-accent">dog</span>park</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#breeds">Meet the dogs</a>
+        <a href="#about">About the park</a>
+      </nav>
+      <a class="header-link" href="#breeds">Explore breeds <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">✳</span> YOUR LITTLE CORNER OF THE INTERNET</p>
+          <h1>Good dogs.<br />Great <span>company.</span></h1>
+          <p class="hero-description">
+            Take a stroll through our mini dog encyclopedia and meet three
+            one-of-a-kind companions.
+          </p>
+          <a class="button button-dark" href="#breeds">Meet the breeds <span aria-hidden="true">↓</span></a>
+          <div class="hero-note">
+            <span class="note-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>Three breeds, a whole lot of personality</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="sun-shape" aria-hidden="true"></div>
+          <div class="hero-sticker sticker-top">HAPPY<br />TAILS!</div>
+          <img
+            src="assets/golden-retriever.svg"
+            alt="Illustration of a friendly Golden Retriever sitting in the grass"
+          />
+          <div class="hero-caption"><span aria-hidden="true">✦</span> Park pals welcome</div>
+          <span class="hero-spark spark-one" aria-hidden="true">✳</span>
+          <span class="hero-spark spark-two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="breed-section" id="breeds">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span aria-hidden="true">01 /</span> THE NEIGHBORHOOD</p>
+            <h2>Pick your park pal</h2>
+            <p class="section-description">
+              Big ears, bigger hearts. Get to know the crew before you say hello.
+            </p>
+          </div>
+          <label class="search-box">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <span class="visually-hidden">Search breeds</span>
+            <input id="breed-search" type="search" placeholder="Find a breed..." autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="breed-grid" id="breed-grid">
+          <article class="breed-card card-peach" data-breed="beagle">
+            <div class="card-topline">
+              <span class="breed-number">01</span>
+              <span class="breed-tag">THE SNIFFER</span>
+            </div>
+            <div class="dog-illustration">
+              <img src="assets/beagle.svg" alt="Illustration of a Beagle with floppy ears" />
+            </div>
+            <div class="card-copy">
+              <div class="breed-title-row">
+                <h3>Beagle</h3>
+                <span class="size-pill">Medium</span>
+              </div>
+              <p class="breed-summary">A curious nose with a best-friend heart.</p>
+              <dl class="breed-facts">
+                <div><dt>Personality</dt><dd>Cheerful, curious &amp; friendly</dd></div>
+                <div><dt>Everyday care</dt><dd>Daily walks and sniff-around time</dd></div>
+              </dl>
+            </div>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+
+          <article class="breed-card card-yellow" data-breed="golden retriever">
+            <div class="card-topline">
+              <span class="breed-number">02</span>
+              <span class="breed-tag">THE SUNSHINE</span>
+            </div>
+            <div class="dog-illustration">
+              <img
+                src="assets/golden-retriever.svg"
+                alt="Illustration of a smiling Golden Retriever"
+              />
+            </div>
+            <div class="card-copy">
+              <div class="breed-title-row">
+                <h3>Golden Retriever</h3>
+                <span class="size-pill">Large</span>
+              </div>
+              <p class="breed-summary">A gentle goof who makes every day brighter.</p>
+              <dl class="breed-facts">
+                <div><dt>Personality</dt><dd>Patient, affectionate &amp; playful</dd></div>
+                <div><dt>Everyday care</dt><dd>Exercise, brushing and together time</dd></div>
+              </dl>
+            </div>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+
+          <article class="breed-card card-lilac" data-breed="poodle">
+            <div class="card-topline">
+              <span class="breed-number">03</span>
+              <span class="breed-tag">THE QUICK-THINKER</span>
+            </div>
+            <div class="dog-illustration">
+              <img src="assets/poodle.svg" alt="Illustration of a fluffy Poodle" />
+            </div>
+            <div class="card-copy">
+              <div class="breed-title-row">
+                <h3>Poodle</h3>
+                <span class="size-pill">Varies</span>
+              </div>
+              <p class="breed-summary">A clever, curly pal who loves to learn.</p>
+              <dl class="breed-facts">
+                <div><dt>Personality</dt><dd>Bright, lively &amp; people-loving</dd></div>
+                <div><dt>Everyday care</dt><dd>Play, brain games and regular grooming</dd></div>
+              </dl>
+            </div>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" role="status" hidden>No breeds found. Try another search.</p>
+        <p class="care-note">
+          <span aria-hidden="true">✦</span> Every dog is an individual. Ask a veterinarian
+          for care advice that fits your own pup.
+        </p>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-icon" aria-hidden="true">🐕</div>
+        <div>
+          <p class="eyebrow">A NOTE FROM THE PARK</p>
+          <h2>A little more kindness, one wag at a time.</h2>
+          <p>
+            Virtual Dog Park is a beginner-friendly dog encyclopedia made for
+            curious humans. Meet a breed, learn a little, and remember: the best
+            park is one where every pup feels welcome.
+          </p>
+        </div>
+        <a class="button button-light" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">🐾</span>
+        <span>virtual<span class="brand-accent">dog</span>park</span>
+      </a>
+      <p>Made with care &amp; a little dog hair.</p>
+      <span class="footer-year">© <span id="year">2026</span> Virtual Dog Park</span>
+    </footer>
+  </body>
+</html>

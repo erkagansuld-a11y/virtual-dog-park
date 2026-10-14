@@ -1,0 +1,754 @@
+:root {
+  color-scheme: light;
+  --ink: #292921;
+  --muted: #706f67;
+  --paper: #fffdf8;
+  --green: #d9e9d2;
+  --green-dark: #466443;
+  --peach: #f8dfd2;
+  --yellow: #f6edc9;
+  --lilac: #e9e1f2;
+  --line: rgba(41, 41, 33, 0.15);
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header,
+.site-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 22px 5.5%;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  align-items: center;
+  display: inline-flex;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 900;
+  gap: 8px;
+  letter-spacing: -0.06em;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--green);
+  border-radius: 50%;
+  display: inline-flex;
+  font-size: 0.95rem;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: 0;
+  width: 32px;
+}
+
+.brand-accent {
+  color: #758b59;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 34px;
+}
+
+.site-header nav a,
+.header-link {
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.site-header nav a {
+  color: var(--muted);
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  color: var(--ink);
+}
+
+.header-link {
+  border-bottom: 1px solid var(--ink);
+  padding: 5px 0;
+}
+
+.header-link span {
+  margin-left: 5px;
+}
+
+.hero,
+.breed-section,
+.about-section {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: 7%;
+  grid-template-columns: 0.95fr 1.05fr;
+  min-height: 550px;
+  padding-bottom: 62px;
+  padding-top: 50px;
+}
+
+.eyebrow {
+  color: var(--green-dark);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  margin: 0 0 18px;
+}
+
+.hero h1,
+.section-heading h2,
+.about-section h2 {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  letter-spacing: -0.055em;
+}
+
+.hero h1 {
+  font-size: clamp(3.4rem, 6.5vw, 5.7rem);
+  line-height: 0.98;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: #789060;
+}
+
+.hero-description {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 23px 0 25px;
+  max-width: 380px;
+}
+
+.button {
+  align-items: center;
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.84rem;
+  font-weight: 700;
+  gap: 18px;
+  justify-content: center;
+  padding: 14px 20px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.button:hover {
+  box-shadow: 0 6px 18px rgba(41, 41, 33, 0.14);
+  transform: translateY(-2px);
+}
+
+.button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #7c9566;
+  outline-offset: 4px;
+}
+
+.button-dark {
+  background: var(--ink);
+  color: white;
+}
+
+.hero-note {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.73rem;
+  gap: 10px;
+  margin-top: 46px;
+}
+
+.note-dots {
+  display: flex;
+}
+
+.note-dots i {
+  background: #dda891;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  height: 21px;
+  margin-left: -5px;
+  width: 21px;
+}
+
+.note-dots i:first-child {
+  background: #94a57b;
+  margin-left: 0;
+}
+
+.note-dots i:last-child {
+  background: #dfc76e;
+}
+
+.hero-art {
+  align-items: center;
+  background: var(--green);
+  border-radius: 48% 48% 43% 43% / 38% 38% 30% 30%;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  position: relative;
+}
+
+.hero-art::after {
+  background: rgba(78, 100, 65, 0.14);
+  border-radius: 50%;
+  bottom: 50px;
+  content: "";
+  height: 28px;
+  left: 20%;
+  position: absolute;
+  right: 20%;
+}
+
+.hero-art img {
+  align-self: flex-end;
+  max-height: 375px;
+  max-width: 84%;
+  position: relative;
+  z-index: 1;
+}
+
+.sun-shape {
+  background: #f6e6a8;
+  border-radius: 50%;
+  height: 145px;
+  position: absolute;
+  right: 17%;
+  top: 11%;
+  width: 145px;
+}
+
+.hero-sticker {
+  align-items: center;
+  background: #f6d29e;
+  border: 2px solid var(--paper);
+  border-radius: 50%;
+  color: #59442f;
+  display: flex;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 900;
+  height: 76px;
+  justify-content: center;
+  line-height: 1.05;
+  position: absolute;
+  text-align: center;
+  transform: rotate(10deg);
+  width: 76px;
+  z-index: 2;
+}
+
+.sticker-top {
+  left: 5%;
+  top: 15%;
+}
+
+.hero-caption {
+  background: var(--paper);
+  border-radius: 999px;
+  bottom: 25px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  position: absolute;
+  right: 8%;
+  z-index: 2;
+}
+
+.hero-caption span {
+  color: #da9d6b;
+  margin-right: 4px;
+}
+
+.hero-spark {
+  color: #fffdf8;
+  position: absolute;
+}
+
+.spark-one {
+  font-size: 1.6rem;
+  right: 10%;
+  top: 40%;
+}
+
+.spark-two {
+  font-size: 1.2rem;
+  left: 15%;
+  top: 49%;
+}
+
+.breed-section {
+  padding-bottom: 86px;
+  padding-top: 55px;
+}
+
+.section-heading {
+  align-items: end;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 8px;
+}
+
+.section-heading h2,
+.about-section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.section-description {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 10px 0 0;
+}
+
+.search-box {
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
+  padding: 10px 15px;
+}
+
+.search-icon {
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.search-box input {
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.78rem;
+  outline: none;
+  width: 145px;
+}
+
+.breed-grid {
+  display: grid;
+  gap: 19px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.breed-card {
+  border: 1px solid rgba(41, 41, 33, 0.08);
+  border-radius: 17px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 16px 17px 19px;
+  position: relative;
+}
+
+.card-peach {
+  background: var(--peach);
+}
+
+.card-yellow {
+  background: var(--yellow);
+}
+
+.card-lilac {
+  background: var(--lilac);
+}
+
+.card-topline,
+.breed-title-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breed-number {
+  color: rgba(41, 41, 33, 0.55);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.breed-tag {
+  background: rgba(255, 253, 248, 0.65);
+  border-radius: 999px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 9px;
+}
+
+.dog-illustration {
+  align-items: center;
+  display: flex;
+  height: 190px;
+  justify-content: center;
+  margin: 3px 0 7px;
+}
+
+.dog-illustration img {
+  height: 100%;
+  max-width: 90%;
+  object-fit: contain;
+  transition: transform 180ms ease;
+}
+
+.breed-card:hover .dog-illustration img {
+  transform: translateY(-4px) rotate(-2deg);
+}
+
+.card-copy {
+  background: rgba(255, 253, 248, 0.78);
+  border-radius: 12px;
+  padding: 16px 14px 13px;
+  position: relative;
+  z-index: 1;
+}
+
+.breed-title-row {
+  align-items: start;
+  gap: 6px;
+}
+
+.breed-title-row h3 {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.size-pill {
+  background: var(--green);
+  border-radius: 999px;
+  color: #385338;
+  flex: 0 0 auto;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 5px 8px;
+}
+
+.breed-summary {
+  color: var(--muted);
+  font-size: 0.77rem;
+  line-height: 1.5;
+  margin: 7px 0 13px;
+  min-height: 36px;
+}
+
+.breed-facts {
+  border-top: 1px solid var(--line);
+  margin: 0;
+  padding-top: 10px;
+}
+
+.breed-facts div + div {
+  margin-top: 9px;
+}
+
+.breed-facts dt {
+  color: var(--green-dark);
+  font-size: 0.59rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.breed-facts dd {
+  font-size: 0.69rem;
+  line-height: 1.45;
+  margin: 3px 0 0;
+}
+
+.card-decoration {
+  bottom: 8px;
+  color: rgba(41, 41, 33, 0.11);
+  font-size: 3rem;
+  position: absolute;
+  right: 11px;
+}
+
+.no-results {
+  color: var(--muted);
+  padding: 30px 0;
+  text-align: center;
+}
+
+.care-note {
+  color: var(--muted);
+  font-size: 0.73rem;
+  margin: 22px 0 0;
+  text-align: center;
+}
+
+.care-note span {
+  color: #d89d61;
+}
+
+.about-section {
+  align-items: center;
+  background: var(--green);
+  border-radius: 22px;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 55px;
+  padding-bottom: 42px;
+  padding-top: 42px;
+}
+
+.about-icon {
+  align-items: center;
+  background: rgba(255, 253, 248, 0.7);
+  border-radius: 50%;
+  display: flex;
+  font-size: 2rem;
+  height: 76px;
+  justify-content: center;
+  width: 76px;
+}
+
+.about-section .eyebrow {
+  margin-bottom: 8px;
+}
+
+.about-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  max-width: 550px;
+}
+
+.about-section p:last-child {
+  color: #596755;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  margin: 10px 0 0;
+  max-width: 580px;
+}
+
+.button-light {
+  background: var(--paper);
+  white-space: nowrap;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.footer-brand {
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.footer-brand .brand-mark {
+  height: 27px;
+  width: 27px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.visually-hidden {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .breed-section,
+  .about-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero {
+    gap: 4%;
+    min-height: 470px;
+  }
+
+  .hero-art {
+    min-height: 330px;
+  }
+
+  .hero-art img {
+    max-height: 310px;
+  }
+
+  .breed-grid {
+    gap: 12px;
+  }
+
+  .breed-card {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .card-copy {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    padding: 16px 5%;
+  }
+
+  .site-header nav {
+    display: none;
+  }
+
+  .header-link {
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    gap: 30px;
+    grid-template-columns: 1fr;
+    padding-bottom: 45px;
+    padding-top: 42px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.4rem, 15vw, 5rem);
+  }
+
+  .hero-description {
+    margin-top: 17px;
+  }
+
+  .hero-note {
+    margin-top: 26px;
+  }
+
+  .hero-art {
+    margin: 0 auto;
+    max-width: 440px;
+    min-height: 330px;
+    width: 100%;
+  }
+
+  .section-heading {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .search-box {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .breed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breed-card {
+    padding: 16px;
+  }
+
+  .dog-illustration {
+    height: 200px;
+  }
+
+  .card-copy {
+    padding: 16px;
+  }
+
+  .breed-summary {
+    min-height: 0;
+  }
+
+  .about-section {
+    align-items: start;
+    gap: 15px;
+    grid-template-columns: auto 1fr;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 26px 22px;
+  }
+
+  .about-icon {
+    height: 54px;
+    width: 54px;
+    font-size: 1.5rem;
+  }
+
+  .about-section .button {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 5%;
+  }
+
+  .site-footer p {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

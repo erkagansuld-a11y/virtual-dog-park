@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" role="img" aria-labelledby="title">
+  <title id="title">Golden Retriever illustration</title>
+  <ellipse cx="160" cy="235" rx="94" ry="13" fill="#a5b28f" opacity=".48"/>
+  <path d="M105 127c-12 19-19 47-17 81 1 17 12 28 29 28h87c17 0 28-11 29-28 2-34-5-62-17-81z" fill="#e9ac55" stroke="#513b29" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M125 145c-6 22-7 54-2 91h23c-3-36-2-66 5-91zM195 145c6 22 7 54 2 91h-23c3-36 2-66-5-91z" fill="#f3c878"/>
+  <path d="M111 104c-3-39 19-66 53-67 36-1 58 26 55 66-3 42-24 69-54 69-31 0-51-27-54-68z" fill="#f3c878" stroke="#513b29" stroke-width="6"/>
+  <path d="M111 75c5-25 23-39 52-38 25 1 43 13 51 37-22-9-37-11-52-6-19 6-32 10-51 7z" fill="#e9ac55"/>
+  <path d="M119 80c-18 0-31-12-35-31-18 20-19 56-4 75 11 15 27 12 41-7-5-13-6-25-2-37z" fill="#e6a64c" stroke="#513b29" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M209 80c18 0 31-12 35-31 18 20 19 56 4 75-11 15-27 12-41-7 5-13 6-25 2-37z" fill="#e6a64c" stroke="#513b29" stroke-width="6" stroke-linejoin="round"/>
+  <ellipse cx="141" cy="103" rx="5" ry="7" fill="#513b29"/>
+  <ellipse cx="189" cy="103" rx="5" ry="7" fill="#513b29"/>
+  <path d="M151 119c4-8 23-8 27 0 0 10-6 15-14 15s-13-5-13-15z" fill="#513b29"/>
+  <path d="M164 134c0 10-9 15-19 12m19-12c0 10 9 15 19 12" fill="none" stroke="#513b29" stroke-width="4" stroke-linecap="round"/>
+  <path d="M107 191c-17 2-26 13-24 26 2 12 13 18 28 12m102-38c17 2 26 13 24 26-2 12-13 18-28 12" fill="#f3c878" stroke="#513b29" stroke-width="6" stroke-linecap="round"/>
+  <path d="M157 163h14" stroke="#f8e5b8" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="57" cy="48" r="5" fill="#fffdf8"/>
+  <path d="M66 39l3-8m6 14 8-4" stroke="#fffdf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="271" cy="151" r="4" fill="#fffdf8"/>
+</svg>

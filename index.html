@@ -19,9 +19,10 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#breeds">Meet the dogs</a>
+        <a href="#my-dog">My virtual dog</a>
         <a href="#about">About the park</a>
       </nav>
-      <a class="header-link" href="#breeds">Explore breeds <span aria-hidden="true">↗</span></a>
+      <a class="header-link" href="#my-dog">Adopt a pal <span aria-hidden="true">↗</span></a>
     </header>
 
     <main>
@@ -142,6 +143,109 @@
         <p class="care-note">
           <span aria-hidden="true">✦</span> Every dog is an individual. Ask a veterinarian
           for care advice that fits your own pup.
+        </p>
+      </section>
+
+      <section class="virtual-dog-section" id="my-dog" aria-labelledby="my-dog-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span aria-hidden="true">02 /</span> YOUR NEW BEST FRIEND</p>
+            <h2 id="my-dog-title">My Virtual Dog</h2>
+            <p class="section-description">
+              Choose a name and a breed, then make each day a little brighter.
+            </p>
+          </div>
+        </div>
+
+        <div class="virtual-dog-layout">
+          <form class="adopt-form" id="adopt-form" novalidate>
+            <h3>Make it official</h3>
+            <p>Every great friendship starts with a hello.</p>
+            <label for="dog-name">Your dog's name</label>
+            <input
+              id="dog-name"
+              name="dogName"
+              type="text"
+              maxlength="20"
+              autocomplete="off"
+              aria-describedby="name-help name-error"
+              placeholder="e.g. Mochi"
+            />
+            <span class="field-help" id="name-help">Up to 20 characters. Spaces inside the name are okay.</span>
+            <label for="dog-breed">Choose a breed</label>
+            <select id="dog-breed" name="dogBreed">
+              <option value="">Choose your park pal</option>
+              <option value="Beagle">Beagle</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="Poodle">Poodle</option>
+            </select>
+            <p class="form-error" id="name-error" role="alert" hidden></p>
+            <button class="button button-dark adopt-button" type="submit">
+              Adopt your dog <span aria-hidden="true">♥</span>
+            </button>
+          </form>
+
+          <section class="dog-dashboard" id="dog-dashboard" aria-label="Your virtual dog" hidden>
+            <div class="dashboard-topline">
+              <span class="breed-tag">YOUR PARK PAL</span>
+              <span class="stage-pill" id="dog-stage">Puppy</span>
+            </div>
+            <div class="dashboard-dog">
+              <img id="dog-image" src="assets/beagle.svg" alt="" />
+            </div>
+            <div class="dashboard-details">
+              <p class="dashboard-label">SAY HELLO TO</p>
+              <h3 id="dog-display-name"></h3>
+              <p class="dashboard-breed" id="dog-display-breed"></p>
+              <div class="dog-stats">
+                <div class="day-stat">
+                  <span class="stat-label">GROWING UP</span>
+                  <strong id="dog-day">Day 1</strong>
+                </div>
+                <div class="happiness-stat">
+                  <div class="happiness-heading">
+                    <span class="stat-label">HAPPINESS</span>
+                    <strong><span id="dog-happiness">50</span><span aria-hidden="true">%</span></strong>
+                  </div>
+                  <div
+                    class="happiness-track"
+                    id="happiness-track"
+                    role="progressbar"
+                    aria-label="Dog happiness"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="50"
+                  >
+                    <span id="happiness-fill"></span>
+                  </div>
+                </div>
+              </div>
+              <p class="stage-help">Puppy: Day 1 · Young Dog: Days 2-3 · Adult Dog: Day 4 onward</p>
+              <div class="care-actions">
+                <button class="button care-button feed-button" id="feed-dog" type="button">
+                  <span aria-hidden="true">♥</span> Feed
+                </button>
+                <button class="button care-button play-button" id="play-dog" type="button">
+                  <span aria-hidden="true">✳</span> Play
+                </button>
+              </div>
+              <div class="care-actions">
+                <button class="button care-button next-day-button" id="next-day" type="button">
+                  Next Day
+                </button>
+                <button class="button care-button start-over-button" id="start-over" type="button">
+                  Start Over
+                </button>
+              </div>
+              <p class="care-feedback" id="care-feedback" role="status" aria-live="polite">
+                Your puppy is ready for a happy day!
+              </p>
+            </div>
+          </section>
+        </div>
+        <p class="virtual-dog-note">
+          Feed and Play each add 10 happiness, up to 100. Next Day advances one day and
+          lowers happiness by 5, down to 0. Your dog is saved in this browser.
         </p>
       </section>
 
